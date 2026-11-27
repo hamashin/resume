@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{ d.title }}｜{{ d.role }}</title>
+<meta name="description" content="{{ d.role }}の職務経歴書。{{ d.summary[:80] }}…">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page">
+
+<header class="hero">
+  <h1>{{ d.title }}</h1>
+  <p class="meta">{{ d.role }} ・ {{ d.updated | ym }}更新</p>
+  <ul class="stats">
+    <li><span class="num">{{ stats.years }}年</span><span class="label">IT業界経験</span></li>
+    <li><span class="num">{{ stats.projects }}件</span><span class="label">担当プロジェクト</span></li>
+    <li><span class="num">{{ stats.leads }}件</span><span class="label">リーダー・PL・PM補佐</span></li>
+  </ul>
+</header>
+
+<section id="summary">
+  <h2>職務要約</h2>
+  <p>{{ d.summary }}</p>
+  {% if d.vision %}<p class="vision"><span>今後やりたいこと</span>{{ d.vision }}</p>{% endif %}
+</section>
+
+<section id="skills">
+  <h2>スキル</h2>
+  <dl class="rows">
+    {% for s in d.skills %}
+    <div><dt>{{ s.area }}</dt><dd>{{ s['items'] }}</dd></div>
+    {% endfor %}
+    <div><dt>資格</dt><dd>
+      {% for c in d.certifications %}{{ c.name }}（{{ c.date | ym }}取得{% if c.note %}・{{ c.note }}{% endif %}）{% if not loop.last %}<br>{% endif %}{% endfor %}
+    </dd></div>
+  </dl>
+</section>
+
+<section id="career">
+  <h2>職務経歴</h2>
+  <nav class="toc" aria-label="会社一覧">
+    {% for c in d.companies %}
+    <a href="#company-{{ loop.index }}">{{ c.name }}<span>{{ c.start | dot }}–{{ c.end | dot }}</span></a>
+    {% endfor %}
+  </nav>
+
+  <ol class="timeline">
+    {% for c in d.companies %}
+    <li class="company{% if not c.end %} current{% endif %}" id="company-{{ loop.index }}">
+      <p class="period">{{ c.start | ym }} 〜 {{ c.end | ym }}（{{ c.duration }}）</p>
+      <h3>{{ c.name }}</h3>
+      <p class="company-summary">{{ c.summary }}</p>
+
+      <div class="projects">
+        {% for p in c.projects %}
+        <article class="project">
+          <header>
+            <h4>{% if p.category %}<span class="cat">{{ p.category }}</span>{% endif %}{{ p.title }}</h4>
+            <p class="pmeta">{{ p.start | dot }}〜{{ p.end | dot }}（{{ p.duration }}） ・ {{ p.role }}{% if p.team %} ・ {{ p.team }}{% endif %}</p>
+          </header>
+          {% if p.tasks %}
+          <ul class="tasks">{% for t in p.tasks %}<li>{{ t }}</li>{% endfor %}</ul>
+          {% endif %}
+          {% if p.notes %}
+          <div class="block"><p class="block-title">ポイント・苦労した点</p>
+            <ul>{% for t in p.notes %}<li>{{ t }}</li>{% endfor %}</ul></div>
+          {% endif %}
+          {% if p.learned %}
+          <div class="block"><p class="block-title">得られたスキル</p>
+            <ul>{% for t in p.learned %}<li>{{ t }}</li>{% endfor %}</ul></div>
+          {% endif %}
+          <dl class="pinfo">
+            {% if p.phases %}<div><dt>担当工程</dt><dd>{{ p.phases | join('・') }}</dd></div>{% endif %}
+            {% if p.tech %}<div><dt>環境</dt><dd>{{ p.tech }}</dd></div>{% endif %}
+          </dl>
+        </article>
+        {% endfor %}
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+<footer class="foot">
+  <p>以上</p>
+  <p class="small">最終更新 {{ d.updated | ym }} ・ GitHub Pages で公開</p>
+</footer>
+
+</div>
+</body>
+</html>

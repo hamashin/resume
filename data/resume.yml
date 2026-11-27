@@ -1,0 +1,983 @@
+# 職務経歴データ。ここを編集して push すると、サイトが自動で更新されます。
+# 氏名・住所・連絡先などの個人情報と、現職の社名・顧客名は書かないこと。
+
+title: 職務経歴書
+role: インフラエンジニア
+updated: 2026-11
+summary: オープン系システムの開発からキャリアをスタートし、UNIX/Linux向けのゲートウェイアプリケーションをTCP/IPプログラミングやシステムコールを用いて開発してきました。そこでシステム構築に興味を持ち、インフラ構築・保守を中心に従事。上流工程の経験を積むため、医療系パッケージソフトウェアの仕様調整・導入テスト、対向装置ベンダーや各医療部門との折衝も経験しました。システムのクラウド化を受けてAWSを中心としたインフラエンジニアとなり、現職ではインフラ部門のチームリーダーとして、PM補佐も兼ねて顧客折衝を行っています。
+vision: これまでの経験を活かし、インフラ領域でチームリーダーやマネジメントの経験を積んでいきたい。
+skills:
+- area: クラウド
+  items: AWS（EC2 / ECS / EKS / Lambda / API Gateway / Aurora / RDS / CloudFront / WAF）、ガバメントクラウド
+- area: IaC・CI/CD
+  items: Terraform / CloudFormation / Ansible / Serverless Framework / CodePipeline / GitHub Actions
+- area: OS
+  items: RHEL / Amazon Linux / Debian / Ubuntu / HP-UX / Solaris / Windows Server
+- area: ミドルウェア・監視
+  items: Docker / Nginx / Apache / Tomcat / Zabbix / Hinemos / JP1 / HULFT
+- area: データベース
+  items: PostgreSQL / MySQL / Oracle / SQL Server
+- area: 言語
+  items: C / Python / PHP / Shell / SQL
+certifications:
+- date: 2009-08
+  name: JP1認定プロフェッショナル（ネットワーク管理）
+- date: 2009-11
+  name: 基本情報技術者
+- date: 2024-07
+  name: 第四級アマチュア無線技士
+- date: 2025-12
+  name: AWS Certified Solutions Architect – Associate
+  note: 有効期限 2028年12月
+companies:
+- name: 現職（IT企業・社名非公開）
+  start: 2023-09
+  end: null
+  summary: インフラ部門のチームリーダー。官公庁・電力系システムのインフラ設計・構築と、PM補佐として顧客折衝を担当。
+  projects:
+  - title: 中央省庁 家畜管理システム サーバレス設計構築
+    category: 官公庁
+    start: 2026-04
+    end: null
+    role: リーダー
+    team: 担当メンバー2名、全体10名
+    phases:
+    - 設計
+    - 基本設計
+    - 詳細設計
+    - 運用設計
+    - 性能テスト計画立案
+    - 環境実装レビュー
+    tech: Aurora Serverless / AWS(WAF/API Gateway/Lambda/S3/CodePipeline一式/SQS/Direct Connect/CloudFormation/Cognito/SES/その他セキュリティ系サービス) / ガバメントクラウド、政府LGWAN接続、政府GSS接続 / Cursor
+    tasks:
+    - 別案件と並行してリーダーを担当。
+    - 担当メンバーがAWS経験及びサーバレス実装の経験がないため、アーキテクチャ設計や作業のレビュー担当として参画。
+    - ガバメントクラウドとの接続となる為、省庁提出資料の調整やレビューを担当。
+    - PJ方針としてAIによる開発を進める為、チーム内での運用方針を調整。
+    learned: []
+    notes:
+    - 実働はせず、実装レビューや方針指示、各作業進捗や課題解決サポートなどが作業です。
+  - title: 電力会社 水力発電業務管理システム2次開発
+    category: 電力関連
+    start: 2025-07
+    end: 2026-03
+    role: PM補佐
+    team: 全体20名
+    phases:
+    - 顧客提案
+    - 見積
+    - 顧客折衝
+    - 会議運営
+    - 仕様説明
+    - 客先進捗報告
+    - 各チームのサポート
+    - ベンダー進捗管理
+    tech: RHEL8.4 / PostgreSQL / Zabbix, Hinemos, JDK、Spring Boot
+    tasks:
+    - 前案件からの2次開発案件。
+    - 客先の予算獲得の為の提案・見積を実施。
+    - クライアント側からの依頼でPM補佐のポジションで参画
+    - PM補佐として、クライアント常務への進捗報告、客先PMへの進捗報告、依頼ベンダーの進捗管理、各チームの進捗管理を実施。
+    learned: []
+    notes:
+    - PM補佐として内外の調整及び報告が主な作業になっております。
+  - title: 電力会社 水力発電業務管理システムリプレース対応
+    category: 電力関連
+    start: 2024-05
+    end: 2025-06
+    role: リーダー
+    team: 担当チーム3名、全体20名
+    phases:
+    - 計画・分析
+    - 要件定義
+    - 基本設計
+    - 会議運営
+    - 構築
+    - テスト
+    - 運用
+    tech: RHEL8.4 / PostgreSQL / Zabbix, Hinemos, JDK、Spring Boot / AWS (EC2, S3, CloudFront, CloudFormation, Route53),VMware ESX
+    tasks:
+    - オンプレからのリプレース方式についての検討
+    - 既存環境のV2VとAWS移行との課題・コスト面も含めた比較検討を実施
+    - AWS有識者が不在なためAWS設計部分担当し、比較結果としてESXiでの構築が決定。
+    - オンプレ部分でのシステム構成設計、環境構築、性能設計及び性能テスト、インフラ領域のテスト実施、運用設計、稼働後保守を担当。
+    learned: []
+    notes:
+    - 既存環境の移行検討について支援として参加
+    - 毎週の顧客とのMTG実施、各種調整、DC運用部門や客先情シス部門との調整を実施。
+    - データ移行計画の立案及び、データ移行停止中の九州全体の営業拠点の運用計画の調整を実施。
+  - title: 中央省庁 医療機関等情報支援システム運用
+    category: 医療システム
+    start: 2024-03
+    end: 2024-04
+    role: リーダー
+    team: 担当チーム3名、全体20名
+    phases:
+    - 運用設計
+    - 運用保守
+    tech: Windows Server 2019 / PostgreSQL / Python, PostgreSQL, Bash, Backlog / AWS (EC2, S3, CloudFront, CloudFormation, Route53)
+    tasks:
+    - 運用設計
+    - 感染者情報を集中管理するシステムの運用改善
+    - AWS有識者が不在となる為スポットの支援を実施
+    learned:
+    - デジタル社会推進標準ガイドラインの知識取得
+    notes:
+    - AWS担当者が離任することに伴う引継ぎを実施
+    - 4月以降担当する予定だったが、受注元都合でPJが終了
+  - title: 政府案件 インドネシア向けLアラートシステム構築
+    category: 防災システム
+    start: 2023-09
+    end: 2024-03
+    role: リーダー
+    team: 担当チーム3名、全体12名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Linux (Amazon Linux 2) / PostgreSQL / Docker, Docker Registry, Ansible, Fluentd, Keycloak, Nginx, Tomcat, Jetty, Hinemos / AWS (EC2, S3, CloudFront, Route53)
+    tasks:
+    - 基本設計～構築～運用設計
+    - 既存の国内LアラートシステムをODAでインドネシアに提供する案件
+    - 要件としてマネージドシステムを原則使わない、AWS以外のクラウドサービスをバックアップとして構築する方針があり、上記条件下でのコンテナの設計及び代替サービスの選定/構築/検証を担当
+    - チームリーダーとしてメンバー管理、進捗管理を担当
+    learned:
+    - Keycloak/Fluentdの技術獲得
+    notes:
+    - マネージドサービスを使わず代替システムを設計/構築/検証する必要があり、調査や検証に多数の工数がかかる案件でした
+  - title: 政府案件 国内Lアラートシステム プレミアム機能環境構築
+    category: 防災システム
+    start: 2023-09
+    end: 2023-10
+    role: SE
+    team: インフラチーム2名、全体7名
+    phases:
+    - 基本設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Linux (Debian) / AWS RDS (PostgreSQL) / Docker, Terraform, Apache / AWS (EKS, ECR, CloudFormation, Cloud9, CodePipeline, CodeBuild, CodeDeploy), GitHub Actions
+    tasks:
+    - 基本設計～構築～テスト
+    - 既存システムの付加機能提案のための環境構築
+    - 検証環境としてEKSを構築
+    - CodePipelineを用いたCI/CDを構築
+    - 構築にはTerraform/CloudFormationを用いた構成管理
+    - EKS未経験状態からの構築
+    learned:
+    - 基礎的なEKS(K8S)構築ノウハウの獲得
+    notes:
+    - 既存システムの付加機能提案のための環境構築
+- name: アジアクエスト株式会社
+  start: 2019-11
+  end: 2023-08
+  summary: AWSインフラの設計・構築・運用。Webサービスのインフラ整備、IaC化、コンテナ移行を担当。
+  projects:
+  - title: インフラ構築/運用
+    category: 求人サイト
+    start: 2022-10
+    end: 2023-06
+    role: SE
+    team: インフラチーム6名、全体60名
+    phases:
+    - 基本設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Linux (Ubuntu, Debian, Amazon Linux 2) / AWS RDS (Aurora MySQL) / Python, Docker, GitLab, Ansible, Serverless Framework, Terraform, Apache / AWS (ECS, EC2, ALB, S3, Aurora, Lambda, SNS, OpenSearch, ElastiCache, CloudFront, WAF, Athena, CodeBuild)
+    tasks:
+    - 基本設計～構築～保守
+    - 既存サイトのサービス拡張に伴うインフラ構築
+    - PHP7.4のEOLに伴う移行作業の実施
+    - EC2からAWS ECSへの移行を実施
+    - Ansible/Serverless Framework/Terraformを用いたIaCによる構成管理
+    - 運用/監視関連のLambdaの作成/保守
+    - インフラ構成資料の再整備を実施
+    learned:
+    - 各種IaCスキルの獲得、ECS運用ノウハウの獲得
+    notes:
+    - 既存システムの新規機能分のインフラ構築や、PHP7.4のサポート終了に伴う保守運用を担当
+  - title: WEBサービス インフラ構築/運用
+    category: MA
+    start: 2020-10
+    end: 2022-09
+    role: SE
+    team: インフラチーム4名、全体20名
+    phases:
+    - 基本設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Linux (Amazon Linux 2, Debian) / AWS RDS (Aurora PostgreSQL) / Python, Ruby on Rails, Docker, GitHub, Nginx / AWS (ECS, EC2, ALB, S3, Lambda, API Gateway, ElastiCache, CodePipeline, CodeBuild, CodeDeploy)
+    tasks:
+    - 基本設計～構築～保守
+    - CI/CDの作成
+    - HTTP 5xxエラー削減のPDCAサイクル運用
+    - 性能改善の推進
+    learned: []
+    notes:
+    - 保守運用面が整備されていないサービスの整備を実施
+    - Ruby on Railsで開発されていたが、5xxエラーが多発しており、nginxエラーログからの抽出と分類、改善の為のPDCAサイクルの推進を担当
+  - title: WEBサービス インフラ構築/運用
+    category: 音声分析
+    start: 2020-07
+    end: 2020-09
+    role: SE
+    team: チーム4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Linux (Amazon Linux 2, Debian) / AWS RDS (Aurora MySQL) / Python, Docker, GitHub, Apache JMeter / AWS (EC2, ALB, S3, Lambda, ElastiCache, CodePipeline, CodeBuild, CodeDeploy)
+    tasks:
+    - 要件定義～設計～構築～保守
+    - システム全体の設計を実施
+    - インフラ構築
+    - 性能テストの実施
+    - 監視設計の立案と顧客への引継ぎ
+    learned: []
+    notes:
+    - 顧客の特許技術を使った音声分析サービスの構築を実施
+    - 顧客がAWS経験が0との事で、基本設計から運用までの設計を行い、運用の引継ぎを実施
+  - title: IVRの試作 インフラ構築
+    category: 音声分析
+    start: 2020-04
+    end: 2020-06
+    role: SE
+    team: チーム4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 開発・構築
+    - 運用設計
+    - 運用保守
+    tech: Linux (Amazon Linux 2, Debian) / AWS RDS (Aurora MySQL) / Python, Docker, GitHub, FreeSWITCH, Pacemaker, Apache, Let's Encrypt / AWS (EC2, ALB, S3)
+    tasks:
+    - 取引先からのプロトタイプ作成依頼の案件
+    - 要件定義～設計～構築
+    learned:
+    - 国内に技術情報の少ないOSSでの構築
+    - IP電話アプリを使用した音声自動応答のデモ環境をAWS上に構築して、環境一式を納品
+    notes:
+    - IVR(Interactive Voice Response)のプロトタイプ開発、OSS選定含めたインフラ設計を実施
+    - OSS(FreeSWITCH)の構築とAndroidを用いた自動応答環境のプロトタイプを作成
+    - オンプレ/クラウド/一部クラウド構成での各ケースでの構成設計を実施
+    - クラウド構成での環境を顧客に納品
+    - FreeSWITCHについての技術情報収集やライセンス条件確認を担当
+    - オンプレではクラスタリングの実装が必要となる為、OSSによる冗長構成/データ同期の検証を実施
+  - title: WEBサイト 保守運用引継ぎ
+    category: チケット販売
+    start: 2020-01
+    end: 2020-03
+    role: SE
+    team: チーム1名、全体4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 運用設計
+    - 運用保守
+    tech: Linux (Amazon Linux 2) / AWS RDS (Aurora MySQL) / Python, PHP, Laravel, Docker, GitHub, Apache / AWS (EC2, ALB, S3, SES, CodePipeline, CodeBuild, CodeDeploy)
+    tasks:
+    - サービス開始後の運用保守の引継ぎ
+    - 開発用のAWSアカウント/OSアカウントの管理
+    - 高負荷想定時のスケール管理
+    - 定期的なアクセス実績のレポートを作成
+    learned:
+    - PHP/Laravelの基本スキル
+    notes:
+    - 稼働後のチケット販売が増えてきた中でのアクセス件数や販売実績のレポート作成を担当
+    - 決済機能もあるため、セキュリティ対策やパッチ適用などのメンテナンスを実施
+  - title: クラウドサービス化対応
+    category: 認証システム
+    start: 2019-11
+    end: 2019-12
+    role: インフラ
+    team: チーム2名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 運用設計
+    - 運用保守
+    tech: Linux (Amazon Linux 2) / MySQL / Docker, GitHub, Apache / AWS (EC2, ELB, S3)
+    tasks:
+    - パッケージ製品の認証ソフトウェアをクラウドサービス化する為の対応を実施
+    - EC2上にベース環境を構築して、AMIによる自動スケーリングの仕組みを実装
+    learned:
+    - AWSの基本スキル
+    notes:
+    - 既存の認証ソフトウェアをクラウドサービス化する為の環境構築を実施
+    - ALBを使うが、仕様上UDPを通す必要があり、NLBを使ったがNLBの仕様理解が大変だった
+- name: ドゥウェル株式会社
+  start: 2013-01
+  end: 2019-10
+  summary: 手術室向け電子麻酔記録システム、ICU向け医療記録システムの導入・操作トレーニング・保守。
+  projects:
+  - title: 熊本県 市立病院 ICU記録システム導入
+    category: 病院
+    start: 2019-07
+    end: 2019-10
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/救急医/ICU看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(ICU立ち会い)
+    learned: []
+    notes:
+    - 初めてのICU部門システムの導入を担当した
+  - title: 鹿児島県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2019-07
+    end: 2019-10
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 最新医療機器との接続テストを現地で実施
+    - クラウド化された電子カルテとの初連携
+  - title: 福岡県 国立病院 麻酔記録システム導入
+    category: 病院
+    start: 2019-04
+    end: 2019-10
+    role: SE
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, XenApp, SerialDebugger, SocketDebugger
+    tasks:
+    - 電子カルテ更新に伴う端末更新作業
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術室看護師/技師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - すでに導入しているシステムの電子カルテ端末リプレースに伴う対応
+    - XenAppによるThinClient環境でどのような構成になっているのか資料がなく、現地調査が大変だった
+  - title: 福岡県 県立病院 麻酔記録システム導入
+    category: 病院
+    start: 2018-09
+    end: 2019-03
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 電子カルテ更新に伴う端末更新作業
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医療機器の種類が8機種を超え、国内初接続の機器の現地テストを実施
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術室看護師/技師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 接続する医療機器が多く、シリアルデータをTCPに変換してサーバと通信する必要があり、データの解析が大変だった。
+  - title: 京都府 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2018-03
+    end: 2018-08
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger, MOXA Nseries
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/救急医/ICU看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(ICU立ち会い)
+    learned: []
+    notes:
+    - 契約時点の要件と、現場が求める要件に齟齬があり、なかなかプロジェクト開始をしていただけず結果的に短期間での導入となった。
+  - title: 福岡県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2017-08
+    end: 2018-02
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger, MOXA Nseries
+    tasks:
+    - 電子カルテ更新に伴う端末更新作業
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医療機器の種類が8機種を超え、国内初接続の機器の現地テストを実施
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術室看護師/技師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 接続する医療機器が多く、シリアルデータをTCPに変換してサーバと通信する必要があり、物理的なネットワーク構成を検討する必要があった。
+  - title: 鹿児島県 私立病院 麻酔記録システム導入
+    category: 病院
+    start: 2017-03
+    end: 2017-07
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - ThinClientと物理PCが混在する環境で、クライアントアプリケーションの設計が複雑だった。
+  - title: 福岡県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2016-10
+    end: 2017-02
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 過去実績のない電子カルテだった為、システム間の接続テストで不具合が多く、導入後の現地サポートに苦労した。
+  - title: 福岡県 私立病院 麻酔記録システム導入
+    category: 病院
+    start: 2016-02
+    end: 2016-09
+    role: リーダー
+    team: チーム2名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 医療用麻薬の処方管理という特殊仕様があり不正対策と法令上の制約を、設計と運用にのせる事が大変だった。
+  - title: 兵庫県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2015-06
+    end: 2016-01
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 稼働当初に請求処理の不具合があり、立ち会いながらの再テストと請求確認で非常に苦労した。
+  - title: 大阪府 国立病院 麻酔記録システム導入
+    category: 病院
+    start: 2014-11
+    end: 2015-05
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 接続する医療機器の台数が多く、同じ種類でもファームの違いで出力仕様が違い、現地での解析や検証が大変だった。
+  - title: 和歌山県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2014-03
+    end: 2014-10
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 医療材料管理システムとの接続という特殊仕様があり、対向システムの準備遅れで検証が直前までかかり大変だった。
+  - title: 兵庫県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2013-11
+    end: 2014-02
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 過去導入病院の系列病院で、特に大きな改修もなく操作訓練や運用調整以外はスムーズにいった。
+  - title: 京都府 国立病院 麻酔記録システム導入
+    category: 病院
+    start: 2013-05
+    end: 2013-10
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned: []
+    notes:
+    - 電子ペーパー上での同意書への署名という特殊仕様があり、システム間の接続検証と当時は"電子署名には法的効力がある判例がない"ことを理解できた。
+  - title: 兵庫県 市立病院 麻酔記録システム導入
+    category: 病院
+    start: 2013-01
+    end: 2013-04
+    role: SE
+    team: チーム3名
+    phases:
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    tech: Windows, Windows Server / SQL Server / IIS / VMware, SerialDebugger, SocketDebugger
+    tasks:
+    - 顧客要件に基づく機能選定
+    - 電子カルテ他部門システムとの通信仕様調整
+    - 医事課/薬剤部/医療情報部門との運用調整
+    - 麻酔科医/手術部看護師/医事課への操作訓練及び運用リハーサル
+    - 医療機器との接続テスト
+    - 運用立ち会い(手術立ち会い)
+    learned:
+    - 臨床についての基本的知識
+    - 医療関連の法令に関する知識
+    - 医療情報に関する知識
+    - 医療機器の基本的な操作方法
+    notes:
+    - 医療に関する専門的な知識と用語を現場で学びつつ、自社製品の仕様がそうである理由を実業務で学んだ。
+    - 自社製品についての知識も必要である為、仕様についての学習も大変苦労した。
+- name: 株式会社リクルートR&Dスタッフィング
+  start: 2007-09
+  end: 2012-12
+  summary: 通信事業者内のインフラ構築および社内業務システムの開発。
+  projects:
+  - title: 工事工程管理システム リプレース対応
+    category: ISP
+    start: 2012-09
+    end: 2012-12
+    role: PL
+    team: チーム4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Windows Server / Oracle / Apache / PHP, CakePHP, JP1, MCSC
+    tasks:
+    - 要件定義～設計～開発～テスト～保守
+    - 既存システムのリプレース案件
+    - 移行先のシステム設計(HW構成/冗長設計)
+    - HWスペック見積、HW構成見積、発注
+    - システム構築、性能テストの実施
+    - データ移行手順の検討
+    - 負荷テスト及び障害テストの計画/実施
+    learned:
+    - ネットワークの知識
+    - データの移行方法
+    - WEBサービスの移行方法
+    notes:
+    - プロバイダの工事状況管理システムのリプレース
+    - 性能要件を見据えたRAIDやNW冗長化の設計を担当
+    - HWの見積及び発注の実施で、発注先工場との折衝を学んだ。
+  - title: 障害対応進捗管理システム 開発
+    category: ISP
+    start: 2010-05
+    end: 2012-08
+    role: リーダー
+    team: チーム4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Windows Server / Oracle / Apache / PHP, CakePHP, JP1, MCSC, ExcelVBA, パトライト
+    tasks:
+    - 要件定義～設計～開発～テスト～保守
+    - ISPの障害問い合わせの進捗管理システム
+    - 要件定義～設計～構築～テストを担当
+    - 開発は他ベンダーに依頼し、ベンダーの調整を実施
+    learned:
+    - PHPからの帳票出力のスキル
+    notes:
+    - 多機能なシステムだった為、段階的な開発とリリースを行った。
+    - インフラ環境の構築と、帳票出力機能の開発を担当
+    - 当初はPDF出力で開発していたが、運用変更になりExcelによる出力を実装
+    - 障害連絡の発生時に、部署のパトライトが点灯する機能を追加。
+  - title: 工事工程管理システム 改修対応
+    category: ISP
+    start: 2009-10
+    end: 2010-04
+    role: SE
+    team: チーム7名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Windows Server / Oracle / Apache / PHP, CakePHP, ExcelVBA
+    tasks:
+    - 要件定義～設計～開発～テスト～保守
+    - 既存システムのリプレース案件
+    - 作業指示書をメールからExcelでの出力に変更
+    - 帳票出力画面、版数管理履歴管理、進捗管理機能を実装
+    learned: []
+    notes:
+    - 作業指示IDからExcelVBAに連携し、帳票を出力する仕組みと、アップロードされたExcelから進捗をDBに反映する機能を実装。
+  - title: コールセンター管理システム リプレース対応
+    category: ISP
+    start: 2007-09
+    end: 2009-09
+    role: SE
+    team: チーム4名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: HP-UX, Solaris, RHEL, Windows Server / Oracle / Apache / samba, NFS, MCSC, SNMP, Wireshark, C言語, Perl, csh
+    tasks:
+    - 既存システムのリプレース案件
+    - 要件定義～設計～開発～テスト～保守
+    - DB/WEB/外部連携サーバ/着信中の件数表示、等システムが複数あり、これらのリプレースを実施
+    - UNIXも多岐にわたる為、それらの冗長設計や構築、テストを実施
+    - 死活監視や監視製品へのSNMPトラップ通知を実装
+    learned:
+    - サーバ構成と、それらの発注方法
+    notes:
+    - 監視製品の不具合があり、調査の為にWiresharkを用いたパケット解析やSNMPの仕様理解にRFCを読むなど、苦労をしました。
+- name: 株式会社エイチ・エイチ・エス
+  start: 2002-04
+  end: 2007-08
+  summary: 公営競技・物流向けシステムの開発（C言語 / UNIX）。2006年10月 リーダーに昇進。
+  projects:
+  - title: 顧客購買システム オンメモリDB移行
+    category: 物流
+    start: 2005-12
+    end: 2007-08
+    role: リーダー
+    team: チーム3名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: HP-UX / CoreSaver / Apache / C言語, SQL, csh, Java Servlet
+    tasks:
+    - 過去案件"オンメモリDBシステム　技術検証"で検証したシステムの本開発
+    - Java Servletで開発された顧客購買システムをオンメモリDBに置き換える開発
+    - 要件定義～共通部品設計～リリースを実施
+    - 海外オフショア(中国)で開発したため受け入れ確認や各種指示/説明を実施
+    - SQLが使えず類似処理が多いため、C言語によるライブラリ設計と実施
+    learned:
+    - 海外オフショアとの調整経験
+    - 共通部品(C言語lib)の設計
+    notes:
+    - 中国との文化の違いに大変苦労しました。以上/以下/未満/超えるの概念の違いがないとの事で、限界値テストがうまくいかず苦労しました
+  - title: 顧客管理基盤システム リプレース対応
+    category: ISP
+    start: 2005-10
+    end: 2005-11
+    role: リーダー
+    team: チーム8名
+    phases:
+    - 開発・構築
+    - テスト
+    - 運用保守
+    tech: Solaris / C言語, csh
+    tasks:
+    - リプレースに伴いOSがAIXからSolarisに変わるため、アプリケーションのシグナル処理部の実装変更を実施
+    - 納期遅れにともなう応援で参加したため、仕様に基づいた改修を実施
+    learned:
+    - OSによるシステムコールの違いの把握
+    notes:
+    - シグナル関数を使った場合に、OSによって事象が発生した場合の戻り値が異なるため、それらの判定処理の改修を実施
+    - AIXでの開発経験がなく、開発時にAIXの実機が現地にもなかった為、テストに大変苦労しました。
+  - title: 顧客購買システム オンメモリDB移行
+    category: 物流
+    start: 2005-07
+    end: 2005-09
+    role: リーダー
+    team: チーム4名、海外8名
+    phases:
+    - 計画・分析
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: HP-UX / CoreSaver / Apache / C言語, SQL, csh, Java Servlet
+    tasks:
+    - 技術検証で作成したプロトタイプの本開発
+    - 分析～基本設計～開発～テスト～保守を実施
+    - 開発は中国オフショアに依頼
+    - 処理を共通化する必要があり、処理用ライブラリの設計を実施
+    learned:
+    - 海外オフショアの調整スキル
+    - 共通ライブラリの設計スキル
+    notes:
+    - オフショアとの文化の違いに苦労しました。中国では以上/以下/未満/より上の境界値の考え方がないとの事で、仕様書が理解されておらず、受入テストの工数が大幅にかかりました。
+  - title: 販売管理システム システム性能改善対応
+    category: 物流
+    start: 2004-12
+    end: 2005-06
+    role: SE
+    team: チーム1名
+    phases:
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Solaris / Oracle / SH, AccessVBA, ExcelVBA, SQL
+    tasks:
+    - 他社開発のシステムの性能改善対応。リリース後に運用に耐えられないとの事で応援でPJ参加
+    - 性能改善のPDCAサイクルの推進を実施
+    - コマンドによる性能情報収集スクリプト作成とレポート作成ツールの開発を実施
+    - 作成したレポートを元にボトルネックを開発に展開し、改修プログラムの評価を実施
+    learned:
+    - ORACLE STATSPACKの使用スキル
+    notes:
+    - 性能改善により運用に耐えられる状況になった為プロジェクトを完了しました
+    - 休日に100人での一斉操作テストのテストシナリオ作成を行いました
+  - title: 貨物鉄道 貨物データ管理システム開発
+    category: 物流
+    start: 2004-09
+    end: 2004-11
+    role: リーダー
+    team: チーム3名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: HP-UX / Oracle, Access / HULFT / C言語, SQL, SH
+    tasks:
+    - 要件定義～設計～開発～テスト～保守を実施
+    - 各物流事業者からのコンテナ予約を受信し、運行計画システムに連携するシステム
+    - 各物流事業者との連携IFを作成し、一部はHULFTによる連携機能を実装
+    - 対向装置にオフコンが存在したため、EBCDIC‐EUCの文字コード変換ライブラリの作成
+    learned:
+    - 外部公開向けの通信IF仕様の策定
+    - オフコン向けのEBCDIC変換仕様の理解
+    notes:
+    - コンテナを利用する物流事業者が複数いる為、各事業者との接続テストに苦労しました
+    - システム障害も事故として扱われる為、リリースや保守は大変緊張しました
+  - title: 競艇在席システム 低コスト化対応
+    category: 公営競技
+    start: 2003-05
+    end: 2004-08
+    role: SE
+    team: チーム3名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Linux / Oracle / C言語, SQL, SH
+    tasks:
+    - 2003年に開発した競艇在席システムのLinuxへの移行
+    - 基本設計～開発～テスト～保守を実施
+    - 導入コストに合わせて、3パターンのHW構成で動作するように開発
+    - OSのシステムコールやバイトオーダーが違う為関連するロジックの改修を実施
+    learned:
+    - OSのシステムコールの仕様の違いの理解
+    notes:
+    - 低コストを目指したことでHWのスペックが下がり性能問題が発生した為、改善とテストに苦労しました。
+  - title: 競艇在席システム開発
+    category: 公営競技
+    start: 2003-01
+    end: 2003-04
+    role: SE
+    team: チーム6名
+    phases:
+    - 要件定義
+    - 基本設計
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: Linux / Oracle / C言語, SQL, SH
+    tasks:
+    - 基本設計～開発～テスト～保守を実施
+    - ATMからの入金データ、投票データを同時に受信する為、冪等性が担保される設計を実施
+    - 性能テストの実施
+    learned:
+    - バイトオーダーの概念の理解
+    - bit演算の基本仕様の理解
+    notes:
+    - 低コストを目指したことでHWのスペックが下がり性能問題が発生した為、改善とテストに苦労しました。
+  - title: 電話投票システム開発
+    category: 公営競技
+    start: 2002-04
+    end: 2002-12
+    role: SE
+    team: チーム6名
+    phases:
+    - 詳細設計
+    - 開発・構築
+    - テスト
+    - 運用設計
+    - 運用保守
+    tech: HP-UX / Oracle / C言語, SQL, SH
+    tasks:
+    - 詳細設計～開発～テスト～保守を担当
+    - NTT交換機からのパケットとネット銀行からのHTTP接続に対応できるI/Fの実装
+    - HTTPプロトコルを受信できるI/FのC言語による自作での実装
+    - 負荷テストの為の通信データを送信する対向装置をエミュレーションするテストツールの製作
+    learned:
+    - C言語/SQLの開発能力
+    - UNIXのシステムコールの理解
+    - 負荷テストの計画・実施
+    - 高トランザクション処理の設計スキル
+    notes:
+    - 性能要件の厳しいシステムだった為、性能テスト→改修→再テストを繰り返し実施しました。
